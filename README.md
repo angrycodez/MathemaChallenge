@@ -29,9 +29,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 # Documenation/Notes a lá Kalle
 
-##Install:
+## Install:
 
-###Requirements
+### Requirements
 
 sudo apt install nodejs
 (since this installed old version 10.19, use this command instead to get most recent version of nodejs:
@@ -41,7 +41,7 @@ sudo apt-get install -y nodejs)
 sudo apt install npm
 sudo apt install ng-common
 
-###angular cli
+### angular cli
 
 npm install - g @angular/cli
 
@@ -58,7 +58,7 @@ ng serve -o --poll=2000
 ng generate component color_slider
 
 
-##Process:
+## Process:
 
 -Setup empty project
 
@@ -82,7 +82,7 @@ ng generate component color_slider
 
 
 
-##Result:
+## Result:
 
 -created freely usable angular component to display a color-bar with a slider to select a color
 
@@ -90,7 +90,7 @@ ng generate component color_slider
 
 
 
-##Known Issues:
+## Known Issues:
 
 -when clicking on the arrow for sliding, the image is getting dragged, and the slider doesn't move smoothly. when releasing the mouseButton, the drag-state keeps active
 
