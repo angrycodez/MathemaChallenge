@@ -28,8 +28,11 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 # Documenation/Notes a lá Kalle
+
 ##Install:
+
 ###Requirements
+
 sudo apt install nodejs
 (since this installed old version 10.19, use this command instead to get most recent version of nodejs:
 curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
@@ -39,19 +42,24 @@ sudo apt install npm
 sudo apt install ng-common
 
 ###angular cli
+
 npm install - g @angular/cli
 
 ### create new project
+
 ng new MathemaChallange
 
 ### run server
+
 ng serve -o --poll=2000
 
 ### create new component
+
 ng generate component color_slider
 
 
 ##Process:
+
 -Setup empty project
 
 -get debugger running
@@ -75,6 +83,7 @@ ng generate component color_slider
 
 
 ##Result:
+
 -created freely usable angular component to display a color-bar with a slider to select a color
 
 -the content of the color-bar can be freely adjusted by setting an array for the color-values and one for the color_weight-values
@@ -82,6 +91,7 @@ ng generate component color_slider
 
 
 ##Known Issues:
+
 -when clicking on the arrow for sliding, the image is getting dragged, and the slider doesn't move smoothly. when releasing the mouseButton, the drag-state keeps active
 
 -the layout for the 'randomize colors'-button is not working properly; it's rather lucky that the position fits the component quite well
