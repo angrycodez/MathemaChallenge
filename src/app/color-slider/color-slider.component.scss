@@ -1,0 +1,36 @@
+
+// the styling for the color-slider component
+.color-slider{
+  height: 80px;   // the height of the component is fixed
+  width: 70%;     // the width takes only a part of the screen/given area
+  margin: auto;   // the slider will be centered
+}
+
+// styling for the color bar
+.color-bar{
+  height: 60%;          // the color bar takes 60% of the compnents height
+  display: flex;        // the children are shown in a row
+  flex-direction: row;
+}
+
+// styling for a single color field within the bar
+.color-field{
+  flex-grow: 1;     // each color field takes the same space of the component
+  height: 100%;     // they fill the whole area vertically
+}
+
+// styling of the arrow/slider
+.slider{
+  position: relative;   // the arrow is placed relative to the color-slider component
+  height: 40%;          // it takes 40% if the height of the component
+}
+
+// the selected color will be previewed over the whole range of the component
+.color-preview{
+  width: 100%;
+}
+
+.container{
+  margin-top: 50px;     // for some reason, the headline would be painted on top of the previous color-preview, if two slider-components are placed after each other, so the margin moves the whole component a bit down to avoid this
+}
+

@@ -1,0 +1,11 @@
+<div class="container">
+  <h2>Color Picker</h2>
+  <div class="color-slider" (mousemove)="onMouseMove($event)" (mouseleave)="onMouseUp()" #color_slider>
+    <div class="color-bar" (mousedown)="onMouseDown($event)">
+      <div class="color-field" *ngFor="let color of colors; index as i" [ngStyle]="{'background-color':color, 'flex-grow':color_weights[i]}"></div>
+    </div>
+    <img class='slider' src="assets/arrow.png" [ngStyle]="{'left':sliderPositionToCssValue()}" (mousedown)="onMouseDown($event)">
+    <h2 [ngStyle]="{'background-color':getSelectedColor(),'color':getInverseColor()}">{{getSelectedColor()}}</h2>
+  </div>
+  <button (click)="setRandomColorsAndWeights(8)">Randomize Colors</button>
+</div>
