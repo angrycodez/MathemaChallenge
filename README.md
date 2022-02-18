@@ -32,68 +32,75 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Install:
 
 ### Requirements
+(eher notiz für mich)
 
+<code>
 sudo apt install nodejs
+</code>
+
 (since this installed old version 10.19, use this command instead to get most recent version of nodejs:
 curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
-sudo apt-get install -y nodejs)
 
+<code>sudo apt-get install -y nodejs</code>)
+
+<code>
 sudo apt install npm
 sudo apt install ng-common
+</code>
 
 ### angular cli
 
-npm install - g @angular/cli
+<code>npm install - g @angular/cli</code>
 
 ### create new project
 
-ng new MathemaChallange
+<code>ng new MathemaChallange</code>
 
 ### run server
 
-ng serve -o --poll=2000
+<code>ng serve -o --poll=2000</code>
 
 ### create new component
 
-ng generate component color_slider
+<code>ng generate component color_slider</code>
 
 
 ## Process:
 
--Setup empty project
+* Setup empty project
 
--get debugger running
+* get debugger running
 
--create color bar (new component, color array, html elements, css styling)
+* create color bar (new component, color array, html elements, css styling)
 
--draw and add image to show slider arrow
+* draw and add image to show slider arrow
 
--catch mouse events on component
+* catch mouse events on component
 
--compute event position in component and transform to corresponding color
+* compute event position in component and transform to corresponding color
 
--create field to preview the selected color
+* create field to preview the selected color
 
--invert selected color to print the color value nicely readable
+* invert selected color to print the color value nicely readable
 
--create button for random color_slider setup (set random colors and random weights)
+* create button for random color_slider setup (set random colors and random weights)
 
--write test cases (i know, probably should have done that earlier/step by step during the process, but was too busy to actually getting used to angular and all the environment)
+* write test cases (i know, probably should have done that earlier/step by step during the process, but was too busy to actually getting used to angular and all the environment)
 
 
 
 ## Result:
 
--created freely usable angular component to display a color-bar with a slider to select a color
+* created freely usable angular component to display a color-bar with a slider to select a color
 
--the content of the color-bar can be freely adjusted by setting an array for the color-values and one for the color_weight-values
+* the content of the color-bar can be freely adjusted by setting an array for the color-values and one for the color_weight-values
 
 
 
 ## Known Issues:
 
--when clicking on the arrow for sliding, the image is getting dragged, and the slider doesn't move smoothly. when releasing the mouseButton, the drag-state keeps active
+* when clicking on the arrow for sliding, the image is getting dragged, and the slider doesn't move smoothly. when releasing the mouseButton, the drag-state keeps active
 
--the layout for the 'randomize colors'-button is not working properly; it's rather lucky that the position fits the component quite well
+* the layout for the 'randomize colors'-button is not working properly; it's rather lucky that the position fits the component quite well
 
 (original: docs.txt)
