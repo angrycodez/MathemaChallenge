@@ -27,7 +27,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
 
-# Documenation/Notes a lá Kalle
+# Documenation / Notes á la Kalle
 
 ## Install:
 
@@ -45,6 +45,7 @@ curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
 
 <code>
 sudo apt install npm
+
 sudo apt install ng-common
 </code>
 
@@ -103,4 +104,3 @@ sudo apt install ng-common
 
 * the layout for the 'randomize colors'-button is not working properly; it's rather lucky that the position fits the component quite well
 
-(original: docs.txt)
